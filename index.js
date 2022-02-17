@@ -29,11 +29,19 @@ app.post(
   validationLogin,
   controllers.createLogin,
 );
+
 app.use(middleware.validateToken);
+
 app.post(
   '/talker',
   validationTalker,
   controllers.createTalker,
+);
+
+app.put(
+  '/talker/:id',
+  validationTalker,
+  controllers.editTalker,
 );
 
 // não remova esse endpoint, e para o avaliador funcionar
