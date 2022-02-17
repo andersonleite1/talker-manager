@@ -49,10 +49,10 @@ app.put(
   controllers.editTalker,
 );
 
-// app.delete(
-//   '/talker/:id',
-//   controllers.deleteTalker,
-// );
+app.delete(
+  '/talker/:id',
+  controllers.deleteTalker,
+);
 
 // não remova esse endpoint, e para o avaliador funcionar
 app.get('/', (_request, response) => {
