@@ -2,6 +2,7 @@ const MSG_EMPTY_TALK = 'O campo "talk" é obrigatório e "watchedAt" e "rate" n�
 
 const isEmptyTalk = (talk) => {
   if (!talk) return true;
+  if (talk.rate === 0) return false;
   return (!talk.watchedAt || !talk.rate);
 };
 
