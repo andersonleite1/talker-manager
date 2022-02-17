@@ -22,6 +22,11 @@ const validationTalker = [
 ];
 
 app.get('/talker', controllers.listTalkers);
+app.get(
+  '/talker/search',
+  middleware.validateToken,
+  controllers.searchTalker,
+);
 app.get('/talker/:id', controllers.listTalkerId);
 
 app.post(
@@ -42,6 +47,11 @@ app.put(
   '/talker/:id',
   validationTalker,
   controllers.editTalker,
+);
+
+app.delete(
+  '/talker/:id',
+  controllers.deleteTalker,
 );
 
 // não remova esse endpoint, e para o avaliador funcionar
