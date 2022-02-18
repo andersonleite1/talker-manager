@@ -17,7 +17,6 @@ router.get(
 
 router.get(
   '/search',
-  middleware.validateToken,
   controllers.searchTalker,
 );
 
