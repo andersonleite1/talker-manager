@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://iconarchive.com/download/i75852/martz90/circle/google-talk.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Talker Manager</title>
+  <style>
+    body {
+      background-color: darkgrey;
+      font-family: 'Roboto', sans-serif;
+    }
+    section {
+      margin: 0 auto;
+      max-width: 520px;
+    }
+    h2 {
+      font-size: 2rem;
+      text-align: center;
+      font-weight: 700;
+      color: darkslateblue;
+    }
+    .description {
+      margin: .5rem;
+      padding: .3rem;
+      background-color: white;
+      border-radius: .2rem;
+    }
+    .description h4 {
+      padding-left: .2rem;
+    }
+    .endpoint {
+      padding-left: .9rem;
+    }
+    .example {
+      padding-left: 1.6rem;
+    }
+    .code {
+      font-family: 'Fira Code', monospace;
+      padding-left: 1.6rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Talker Manager</h2>
+  <section>
+    <div class="description">
+      <h4>Search al talkers</h4>
+      <p class="endpoint">GET - <i>/talker</i></p>
+      <p class="example"><i>Ex:</i> http://localhost:3000/talker</p>
+    </div>
+    <div class="description">
+      <h4>Search talker by id</h4>
+      <p class="endpoint">GET - <i>/talker/:id</i></p>
+      <p class="example"><i>Ex:</i> http://localhost:3000/talker/5</p>
+    </div>
+    <div class="description">
+      <h4>Search talker by name</h4>
+      <p class="endpoint">GET - <i>/talker/search?q=searchTerm</i></p>
+      <p class="example"><i>Ex:</i> http://localhost:3000/talker/search?q=maria</p>
+    </div>
+    <div class="description">
+      <h4>Login</h4>
+      <p class="endpoint">POST - <i>/login</i></p>
+      <p class="example"><i>Ex:</i> http://localhost:3000/login</p>
+    </div>
+    <div class="description">
+      <h4>Register talker</h4>
+      <p class="endpoint">POST - <i>/talker</i></p>
+      <p class="example"><i>Ex:</i> http://localhost:3000/talker</p>
+      <div class="code">
+        {
+          name: "Maria Silva",
+          age: 26,
+          talk: {
+            watchedAt: "22/10/2019",
+            rate: 5
+          }
+        }
+      </div>
+    </div>
+    <div class="description">
+      <h4>Update talker</h4>
+      <p class="endpoint">PUT - <i>/talker/:id</i></p>
+      <p class="example"><i>Ex:</i> http://localhost:3000/talker/5</p>
+      <div class="code">
+        {
+          name: "Maria Oliveira",
+          age: 26,
+          talk: {
+            watchedAt: "22/10/2019",
+            rate: 5
+          }
+        }
+      </div>
+    </div>
+    <div class="description">
+      <h4>Delete talker</h4>
+      <p class="endpoint">DELETE - <i>/talker/:id</i></p>
+      <p class="example"><i>Ex:</i> http://localhost:3000/talker/5</p>
+    </div>
+  </section>
+</body>
+</html>

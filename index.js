@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 
 const bodyParser = require('body-parser');
 const middleware = require('./middlewares');
@@ -15,10 +16,12 @@ const PORT = '3000';
 app.use('/login', loginRouter);
 app.use('/talker', talkerRouter);
 
-// não remova esse endpoint, e para o avaliador funcionar
-app.get('/', (_request, response) => {
-  response.status(HTTP_OK_STATUS).send();
-});
+app.get(
+  '/', 
+  (_request, response) => {
+    response.status(HTTP_OK_STATUS).sendFile(path.join(`${__dirname}/index.html`));
+  },
+);
 
 app.listen(PORT, () => {
   console.log('Online');
