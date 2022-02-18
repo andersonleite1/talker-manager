@@ -3,6 +3,7 @@
 ## Descrição 
 
 Esse foi uns dos projetos que realizei na [Trybe](https://www.betrybe.com/), nele desenvolvi uma API com CRUD (**C**reate, **R**ead, **U**pdate e **D**elete) de palestrantes. Precisei desenvolver alguns endpoints que irão ler e escrever em um arquivo, isso utilizando o módulo `fs`.
+Para ter acesso a API basta clicar [neste link](https://project-talker-manager.herokuapp.com/)
 
 ## Habilidades
 
@@ -25,11 +26,16 @@ Neste projeto, verificou-se minhas habilidades de:
 ## Resultado
 ![Resultado final](https://github.com/andersonleite1/talker-manager/blob/main/img/result.png)
 ![Screenshot](https://github.com/andersonleite1/talker-manager/blob/main/img/screenshot.png?raw=true)
+
 ## Tecnologias utilizadas
+- `nodejs`
+- `express`
+- `html5`
+- `css3`
 
-## Como instalar as dependências necessárias
+## Como instalar essa API localmente na sua máquina
 
-Antes de tudo é preciso fazer o clone do projeto para sua máquina (é necessário ter o git instalado), execute no seu terminal o seguinte comando:
+Antes de tudo é preciso fazer o clone do projeto para sua máquina (é necessário ter o git instalado), escolha uma pasta no seu pc, entre nela e pelo terminal execute o seguinte comando:
 
 ```bash
 git clone https://github.com/andersonleite1/talker-manager.git
