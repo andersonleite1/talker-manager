@@ -2,7 +2,7 @@
 
 ## Descrição 
 
-Esse foi uns dos projetos que realizei na [Trybe](https://www.betrybe.com/), nele desenvolvi uma API com CRUD (**C**reate, **R**ead, **U**pdate e **D**elete) de palestrantes. Precisei desenvolver alguns endpoints que irão ler e escrever em um arquivo, isso utilizando o módulo `fs`.
+Esse foi um dos projetos que realizei na [Trybe](https://www.betrybe.com/), nele desenvolvi uma API com CRUD (**C**reate, **R**ead, **U**pdate e **D**elete) de palestrantes. Precisei desenvolver alguns endpoints que irão ler e escrever em um arquivo, isso utilizando o módulo `fs`.
 Para ter acesso a API basta clicar [neste link](https://project-talker-manager.herokuapp.com/)
 
 ## Habilidades
