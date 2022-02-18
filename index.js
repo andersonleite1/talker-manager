@@ -11,7 +11,7 @@ app.use(bodyParser.json());
 app.use(middleware.errorHandler);
 
 const HTTP_OK_STATUS = 200;
-const PORT = '3000';
+const PORT = process.env.PORT || '3000';
 
 app.use('/login', loginRouter);
 app.use('/talker', talkerRouter);
