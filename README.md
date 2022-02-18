@@ -23,9 +23,33 @@ Neste projeto, verificou-se minhas habilidades de:
 - Criar rotas e aplicar middlewares.
 
 ## Resultado
-
-## Tecnologias utilizadas no seu desenvolvimento
+![Resultado final](https://github.com/andersonleite1/talker-manager/blob/main/img/result.png)
+![Screenshot](https://github.com/andersonleite1/talker-manager/blob/main/img/screenshot.png?raw=true)
+## Tecnologias utilizadas
 
 ## Como instalar as dependências necessárias
 
+Antes de tudo é preciso fazer o clone do projeto para sua máquina (é necessário ter o git instalado), execute no seu terminal o seguinte comando:
+
+```bash
+git clone https://github.com/andersonleite1/talker-manager.git
+```
+
+Após ter feito o clone entre na pasta `talker-manager` e pelo terminal já dentro da pasta execute:
+
+```bash
+npm install
+```
+
+*Esse comando irá instalar as dependências do projeto. Para esse comando funcionar você precisa ter o [node](https://nodejs.org/) instalado na sua máquina.*
+
 ## Como executar o projeto
+
+Com os passos anteriores já cumpridos agora basta executar o seguinte comando:
+
+```bash
+npm start
+```
+
+Você já está com a API rodando na sua máquina local é só aproveitar :smile:
+
